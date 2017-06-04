@@ -9,10 +9,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import Model.VO.*;
-/**
- *
- * @author diegoM
- */
+
+
 public class Conneccion {
      public static Connection getConnection(User login) {
         try {

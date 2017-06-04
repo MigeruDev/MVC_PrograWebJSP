@@ -1,1 +1,71 @@
-index.css
+/*header*/
+
+header{
+	margin-top: 100px;
+}
+
+.imgwrapper{
+	padding: 2em;
+	padding-right: 5em;
+	padding-left: 5em;
+}
+
+header .imgwrapper .img-responsive{
+	width: 500px;
+	margin: 10px auto;
+}
+
+legend{
+	text-align: center;
+}
+
+.form-group{
+	margin: 0 auto;
+	width: 300px;
+}
+
+section .container form fieldset .form-group{
+	height: 45px;
+}
+
+section .container form fieldset .form-group{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.form-control{
+	width: 200px;
+	float: right;
+}
+
+label, .form-control{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+label{
+	margin-top: 5px;
+}
+
+.form-group .btn-primary{
+	width: 125px;
+}
+
+
+/*Footer*/
+footer{
+   background-color: #424558;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}

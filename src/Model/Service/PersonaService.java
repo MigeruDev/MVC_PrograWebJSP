@@ -32,8 +32,8 @@ public class PersonaService {
 	
 	private PersonaService (String base_datos, String clave_base_datos){
 		User login = new User("jdbc:mysql://localhost:3306/mydb");
-		login.setUser("root");
-		login.setPassword("1234");
+		login.setUser("theworstone");
+		login.setPassword("admin");
 		Connection connection = Conneccion.getConnection(login);
         database = new DatabaseDAO(connection);
 	}
