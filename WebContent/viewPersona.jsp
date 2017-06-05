@@ -32,7 +32,7 @@ pageEncoding="ISO-8859-1"%>
 			List<PersonaVO> list = PersonaDAO.getAllRecords();
 			request.setAttribute("list", list);
 			%>
-
+			<!-- librerías para generar reportes -->
 			<script type="text/javascript" src="librerias/1.js"></script>
 			<script type="text/javascript" src="librerias/2.js"></script>
 			<script type="text/javascript" src="librerias/3.js"></script>
@@ -53,7 +53,7 @@ pageEncoding="ISO-8859-1"%>
 				} );
 			} );</script>
 
-			
+			<!-- Fin de código para generar reportes -->
 			<table class="table table-striped" id="tablaPersonas">
 				<thead>
 					<tr>
