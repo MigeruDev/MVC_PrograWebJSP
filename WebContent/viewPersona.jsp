@@ -14,7 +14,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 <body>
-
 	<header>
 		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.5</h1>	
 	</header>
@@ -22,10 +21,24 @@
 		<div id="panel">
 			<center>
 				<a href="addPersona.jsp" type="button" class="btn btn-success">Agregar Persona</a>
-				<a type="viewPersona.jsp" class="btn btn-info">Listar Personas</a>
+				<a href="#" type="viewPersona.jsp" class="btn btn-info">Listar Personas</a>
 			</center>					
 		</div>
 		<div id="info" class="container-fluid">
+			<%@page import="Model.Service.PersonaService, Model.VO.*,java.util.*"%>
+			<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+			
+			<%
+				PersonaService ps = PersonaService.getInstance();
+				ArrayList<ArrayList<String>> resp = ps.getAll("Persona");
+				ArrayList<String> list = resp.get(0);
+				request.setAttribute("list",list);
+			%>
+			
+			<c:forEach items="${list}" var="persona">
+				<p> ${persona} </p>
+			</c:forEach>
+			
 			
 		</div>
 	</section>
