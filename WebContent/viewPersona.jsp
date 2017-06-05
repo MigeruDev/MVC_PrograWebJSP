@@ -12,6 +12,8 @@ pageEncoding="ISO-8859-1"%>
 	<script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="script/bootstrap.min.js" ></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/botones.css">
+
 </head>
 <body>
 	<header>
