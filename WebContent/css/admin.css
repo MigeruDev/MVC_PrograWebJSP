@@ -1,0 +1,56 @@
+/*Header*/
+
+
+/*Section*/
+section{
+	height: 600px;
+}
+
+section #panel, section #info{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/*Section-Panel*/
+
+#panel{
+	background-color: #eaeaea;
+	width: 250px;
+}
+
+#panel .btn{
+	width: 90%;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#panel .btn-info{
+	margin-top: 400px;
+}
+
+
+/*Section-Info*/
+#info{
+	border: solid 5px crimson;
+	width: 67%;
+	min-width: 300px;
+}
+
+/*Footer*/
+footer{
+   background-color: #424558;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
