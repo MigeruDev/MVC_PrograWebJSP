@@ -32,8 +32,29 @@ pageEncoding="ISO-8859-1"%>
 			List<PersonaVO> list = PersonaDAO.getAllRecords();
 			request.setAttribute("list", list);
 			%>
+
+			<script type="text/javascript" src="librerias/1.js"></script>
+			<script type="text/javascript" src="librerias/2.js"></script>
+			<script type="text/javascript" src="librerias/3.js"></script>
+			<script type="text/javascript" src="librerias/4.js"></script>
+			<script type="text/javascript" src="librerias/5.js"></script>
+			<script type="text/javascript" src="librerias/6.js"></script>
+			<script type="text/javascript" src="librerias/7.js"></script>
+			<script type="text/javascript" src="librerias/8.js"></script>
+			<script type="text/javascript" src="librerias/9.js"></script>
+
+
+			<script type="text/javascript">$(document).ready(function() {
+				$('#tablaPersonas').DataTable( {
+					dom: 'Bfrtip',
+					buttons: [
+					'copy', 'excel', 'pdf', 'print'
+					]
+				} );
+			} );</script>
+
 			
-			<table class="table table-striped">
+			<table class="table table-striped" id="tablaPersonas">
 				<thead>
 					<tr>
 						<th>Id</th>
@@ -46,22 +67,22 @@ pageEncoding="ISO-8859-1"%>
 				</thead>
 				<tbody>
 					<c:forEach items="${list}" var="persona">
-						<tr>
-							<td>${persona.getId()}</td>
-							<td>${persona.getNombre()}</td>
-							<td>${persona.getApellido()}</td>
-							<td>${persona.getEdad()}</td>
-							<td class="text-center">
-								<a class='btn btn-info btn-xs' href="editPersona.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-edit"></span></a>
-							</td>
-							<td class="text-center">
-								<a class='btn btn-danger btn-xs' href="deletePersonaDB.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-trash"></span></a>
-							</td>
-						</tr>
-					</c:forEach>
-				</tbody>
+					<tr>
+						<td>${persona.getId()}</td>
+						<td>${persona.getNombre()}</td>
+						<td>${persona.getApellido()}</td>
+						<td>${persona.getEdad()}</td>
+						<td class="text-center">
+							<a class='btn btn-info btn-xs' href="editPersona.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-edit"></span></a>
+						</td>
+						<td class="text-center">
+							<a class='btn btn-danger btn-xs' href="deletePersonaDB.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-trash"></span></a>
+						</td>
+					</tr>
+				</c:forEach>
+			</tbody>
 
-			</table>
+		</table>
 
 
 	</div>
