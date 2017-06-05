@@ -21,7 +21,7 @@ pageEncoding="ISO-8859-1"%>
 		<div id="panel">
 			<center>
 				<a href="addPersona.jsp" type="button" class="btn btn-success">Agregar Persona</a>
-				<a href="#" type="viewPersona.jsp" class="btn btn-info">Listar Personas</a>
+				<a href="#" type="button" class="btn btn-info">Listar Personas</a>
 			</center>					
 		</div>
 		<div id="info" class="container-fluid">
@@ -52,10 +52,10 @@ pageEncoding="ISO-8859-1"%>
 							<td>${persona.getApellido()}</td>
 							<td>${persona.getEdad()}</td>
 							<td class="text-center">
-								<a class='btn btn-info btn-xs' href="editform.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-edit"></span></a>
+								<a class='btn btn-info btn-xs' href="editPersona.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-edit"></span></a>
 							</td>
 							<td class="text-center">
-								<a class='btn btn-danger btn-xs' href="deleteuser.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-trash"></span></a>
+								<a class='btn btn-danger btn-xs' href="deletePersonaDB.jsp?id=${persona.getId()}"><span class="glyphicon glyphicon-trash"></span></a>
 							</td>
 						</tr>
 					</c:forEach>
