@@ -32,7 +32,6 @@ section #panel, section #info{
 
 /*Section-Info*/
 #info{
-	border: solid 5px crimson;
 	width: 67%;
 	min-width: 300px;
 }
