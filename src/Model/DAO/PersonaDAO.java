@@ -63,7 +63,7 @@ public class PersonaDAO {
 		int estado=0;
 		try{
 			Connection con=getConnection();
-			PreparedStatement ps=con.prepareStatement("delete from persona where id=?");
+			PreparedStatement ps=con.prepareStatement("delete from persona where idPersona=?");
 			ps.setInt(1,Integer.parseInt(persona.getId()));
 			estado=ps.executeUpdate();
 		}catch(Exception e){
@@ -96,7 +96,7 @@ public class PersonaDAO {
 		PersonaVO persona=null;
 		try{
 			Connection con=getConnection();
-			PreparedStatement ps=con.prepareStatement("select * from persona where id=?");
+			PreparedStatement ps=con.prepareStatement("select * from persona where idPersona=?");
 			ps.setInt(1,Integer.parseInt(id));
 			ResultSet rs=ps.executeQuery();
 			while(rs.next()){

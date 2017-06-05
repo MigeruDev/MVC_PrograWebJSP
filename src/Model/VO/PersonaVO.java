@@ -6,6 +6,10 @@ public class PersonaVO {
 	private String apellido;
 	private Integer edad;
 	
+	public PersonaVO(){
+		
+	}
+	
 	public PersonaVO(String id, String nombre, String apellido){
 		this.id= id;
 		this.nombre = nombre;

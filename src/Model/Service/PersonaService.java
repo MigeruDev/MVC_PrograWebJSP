@@ -128,8 +128,7 @@ public class PersonaService {
 	        	System.out.println(objeto[1]);
 	        	System.out.println(objeto[2]);
 	        	System.out.println(objeto[3]);
-
-	        	
+	
 	        }
 			
 			JOptionPane.showMessageDialog(null, "ésta verga salió bien !!");
