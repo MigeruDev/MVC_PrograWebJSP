@@ -11,8 +11,13 @@ import Model.VO.Tupla;
 import Model.VO.User;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+
+import javax.swing.JOptionPane;
 
 public class PersonaService {
 
@@ -32,8 +37,8 @@ public class PersonaService {
 	
 	private PersonaService (String base_datos, String clave_base_datos){
 		User login = new User("jdbc:mysql://localhost:3306/mydb");
-		login.setUser("theworstone");
-		login.setPassword("admin");
+		login.setUser("root");
+		login.setPassword("andre");
 		Connection connection = Conneccion.getConnection(login);
         database = new DatabaseDAO(connection);
 	}
@@ -54,6 +59,17 @@ public class PersonaService {
         }
     }
 	
+	/**
+	 * 
+	 * @param baseDatos
+	 * @param claveBaseDatos
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 * 
+	 */
+    public static void initQuerySrv(String baseDatos, String claveBaseDatos) throws ClassNotFoundException, SQLException {
+        instance = new PersonaService(baseDatos, claveBaseDatos);
+    }
 	
 	public void addElement(String tableName, Map<String, String> fields) throws QueryException, CloseConnectionException {
         database.addElement(tableName, fields);
@@ -70,5 +86,58 @@ public class PersonaService {
     public void update(String tableName, ArrayList<Tupla> previewRow, ArrayList<Tupla> newRow) throws QueryException, CloseConnectionException {
         database.updateElement(tableName, previewRow, newRow);
     }
+    
+    public ArrayList<ArrayList<String>> obtenerElemento(String tablaNam) {
+        return database.obtenerElementosTabla(tablaNam);
+    }
+    /**
+     * 
+     * @param args
+     * @throws QueryException
+     * @throws CloseConnectionException
+     * 
+     */
+    /*
+    public static void main(String[] args) throws QueryException, CloseConnectionException {
+		try {
+			PersonaService persona_service;
+			PersonaService.initQuerySrv("mydb", "1234");
+			persona_service = PersonaService.getInstance();
+			
+			Map<String, String> personaNueva = new HashMap<>();
+			personaNueva.put("idPersona", "03");
+			personaNueva.put("nombrePersona", "CARLOS");
+			personaNueva.put("apellidoPersona", "SANTAMARIA");
+			personaNueva.put("edad", "25");
+			
+			//persona_service.addElement("persona", personaNueva);
+			
+	        ArrayList<ArrayList<String>> datos=persona_service.obtenerElemento("persona");
+	        Iterator<ArrayList<String>> iterador = datos.iterator();
+	        while(iterador.hasNext()){
+	        	ArrayList<String> next = iterador.next();
+	        	Iterator<String> iterator = next.iterator();
+	        	Object[]objeto = new Object[4];
+	        	int i = 0;
+	        	while (iterator.hasNext()){
+	        		objeto[i] = iterator.next();
+	        		i++;
+	        	}
+	        	
+	        	System.out.println(objeto[0]);
+	        	System.out.println(objeto[1]);
+	        	System.out.println(objeto[2]);
+	        	System.out.println(objeto[3]);
 
+	        	
+	        }
+			
+			JOptionPane.showMessageDialog(null, "ésta verga salió bien !!");
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+    */
 }
+
