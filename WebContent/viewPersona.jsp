@@ -25,19 +25,33 @@
 			</center>					
 		</div>
 		<div id="info" class="container-fluid">
-			<%@page import="Model.Service.PersonaService, Model.VO.*,java.util.*"%>
+			<%@page import="Model.DAO.PersonaDAO, Model.VO.*,java.util.*"%>
 			<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 			
 			<%
-				PersonaService ps = PersonaService.getInstance();
-				ArrayList<ArrayList<String>> resp = ps.getAll("persona");
-				ArrayList<String> list = resp.get(0);
-				request.setAttribute("list",list);
+				List<PersonaVO> list = PersonaDAO.getAllRecords();
+				request.setAttribute("list", list);
 			%>
 			
-			<c:forEach items="${list}" var="persona">
-				<p> ${persona} </p>
-			</c:forEach>
+			<table border="1" width="90%">
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Edad</th>
+					<th>Modificar</th><th>Eliminar</th>
+				</tr>
+				<c:forEach items="${list}" var="persona">
+					<tr>
+						<td>${persona.getId()}</td>
+						<td>${persona.getNombre()}</td>
+						<td>${persona.getApellido()}</td>
+						<td>${persona.getEdad()}</td>
+						<td><a href="editform.jsp?id=${persona.getId()}">Edit</a></td>
+						<td><a href="deleteuser.jsp?id=${persona.getId()}">Delete</a></td>
+					</tr>
+				</c:forEach>
+			</table>
 			
 			
 		</div>
