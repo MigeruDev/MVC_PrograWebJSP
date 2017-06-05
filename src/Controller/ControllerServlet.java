@@ -35,8 +35,6 @@ public class ControllerServlet extends HttpServlet {
     		RequestDispatcher rd = request.getRequestDispatcher("/fail.jsp");
     		rd.forward(request, response);
     	}
-		
-    	
 	}
 	
     @Override
