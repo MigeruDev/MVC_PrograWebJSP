@@ -30,7 +30,7 @@
 			
 			<%
 				PersonaService ps = PersonaService.getInstance();
-				ArrayList<ArrayList<String>> resp = ps.getAll("Persona");
+				ArrayList<ArrayList<String>> resp = ps.getAll("persona");
 				ArrayList<String> list = resp.get(0);
 				request.setAttribute("list",list);
 			%>

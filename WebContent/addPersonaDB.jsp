@@ -1,4 +1,4 @@
-<%@page import="Model.Service.PersonaService, java.util.*"%>
+<%@page import="Model.Service.PersonaService"%>
 <jsp:useBean id="persona" class="Model.VO.PersonaVO"></jsp:useBean>
 <jsp:setProperty property="*" name="persona"/>
 
