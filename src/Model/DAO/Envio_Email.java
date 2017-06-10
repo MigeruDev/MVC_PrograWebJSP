@@ -22,12 +22,22 @@ import Model.VO.EmailVO;
 public class Envio_Email {
 
 	public static void sendFromGMail(EmailVO email) {
+<<<<<<< HEAD
+=======
+		
+
+>>>>>>> 0ce2a9a61bc81e4e5f0f6b9941eef8b72cccafe3
 		/**
 		 * Correo de envío
 		 */
 		String from = "benitocamelasmaria";
 		email.setFrom(from);
+<<<<<<< HEAD
 		String pass = "123456789";
+=======
+		String pass = "a123456789.";
+		email.setPass(pass);
+>>>>>>> 0ce2a9a61bc81e4e5f0f6b9941eef8b72cccafe3
 		
 		String[] to = email.getTo();
 		
