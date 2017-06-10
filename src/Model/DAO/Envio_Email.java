@@ -23,9 +23,9 @@ public class Envio_Email {
 
 	public static void sendFromGMail(EmailVO email) {
 		
-		String from = "andre.joseph.jaramillo";
+		String from = "benitocamelasmaria";
 		email.setFrom(from);
-		String pass = "escorpion17";
+		String pass = "a123456789.";
 		email.setPass(pass);
 		
 		String[] to = email.getTo();
