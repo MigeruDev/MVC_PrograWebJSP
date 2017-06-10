@@ -13,12 +13,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 <body>
+	<header>
+		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.6</h1>	
+	</header>
 	<section>
 		<div id = "panel">
 			<center>
 				<a href="addPersona.jsp" type="button" class="btn btn-success">Agregar Persona</a>
-				<a href="viewPersona.jsp" type="button" class="btn btn-info">Listar Personas</a>
 				<a href="enviarFormulario.jsp" type="button" class="btn btn-success">Enviar formulario</a>
+				<a href="viewPersona.jsp" type="button" class="btn btn-info">Listar Personas</a>
+				
 			</center>
 		</div>
 		<div id = "info" class= "container-fluid">

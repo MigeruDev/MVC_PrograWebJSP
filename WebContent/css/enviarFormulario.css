@@ -26,7 +26,7 @@ section #panel, section #info{
 }
 
 #panel .btn-info{
-	margin-top: 490px;
+	margin-top: 460px;
 }
 
 /*Section-Report*/
@@ -43,12 +43,46 @@ section #panel, section #info{
 
 /*Section-Info*/
 #info{
+	/*border: solid 5px crimson;*/
 	width: 67%;
 	min-width: 300px;
 }
 
-#info .table-striped{
-	margin-top: 50px;
+#info form{
+	margin-top: 100px;
+}
+
+legend{
+	text-align: center;
+}
+
+.form-group{
+	margin: 0 auto;
+	width: 300px;
+}
+
+section .container-fluid form fieldset .form-group{
+	height: 45px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.form-control{
+	width: 200px;
+	float: right;
+}
+
+label, .form-control{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+label{
+	margin-top: 5px;
+}
+
+.form-group .btn-primary{
+	width: 125px;
 }
 
 /*Footer*/
