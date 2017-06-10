@@ -29,6 +29,17 @@ section #panel, section #info{
 	margin-top: 490px;
 }
 
+/*Section-Report*/
+
+.dataTables_info, .dataTables_paginate{
+	margin: auto;
+	margin-top: 100px;
+}
+
+.dataTables_info{
+	background-color: crimson !important;
+}
+
 
 /*Section-Info*/
 #info{
