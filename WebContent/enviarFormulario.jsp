@@ -20,7 +20,7 @@
 			</center>
 		</div>
 		<div id = "info" class= "container-fluid">
-			<form action="" method = "post">
+			<form action="enviarFormularioEmail.jsp" method = "post">
 				<fieldset class="form-group">
 					<legend>Ingrese los datos para el envío de email</legend>
 					<div class="form-group">

@@ -22,13 +22,20 @@ import Model.VO.EmailVO;
 public class Envio_Email {
 
 	public static void sendFromGMail(EmailVO email) {
-		String from = email.getFrom();
-		String pass = email.getPass();
-		String[] to = email.getTo();
-		String subject = email.getSubject();
-		String body = email.getBody();
 		
-        Properties props = System.getProperties();
+		String from = "andre.joseph.jaramillo";
+		email.setFrom(from);
+		String pass = "escorpion17";
+		email.setPass(pass);
+		
+		String[] to = email.getTo();
+		
+		String subject = "Reporte de Usuarios";
+		email.setSubject(subject);
+		
+		String body = email.getBody();
+        
+		Properties props = System.getProperties();
         String host = "smtp.gmail.com";
         
         props.put("mail.smtp.starttls.enable", "true");
