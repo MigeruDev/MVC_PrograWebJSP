@@ -16,7 +16,7 @@
 <body>
 
 	<header>
-		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.5</h1>	
+		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.6</h1>	
 	</header>
 	<section>
 		<div id="panel">

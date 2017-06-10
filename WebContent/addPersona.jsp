@@ -15,12 +15,13 @@
 </head>
 <body>
 	<header>
-		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.5</h1>	
+		<h1>BIENVENIDO A LA INTERFAZ DE ADMINISTRADOR. V.1.6</h1>	
 	</header>
 	<section>
 		<div id="panel">
 			<center>
 				<a href="addPersona.jsp" type="button" class="btn btn-success">Agregar Persona</a>
+				<a href="enviarFormulario.jsp" type="button" class="btn btn-success">Enviar formulario</a>
 				<a href="viewPersona.jsp" type="viewPersona.jsp" class="btn btn-info">Listar Personas</a>
 			</center>					
 		</div>
