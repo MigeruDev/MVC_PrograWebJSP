@@ -17,9 +17,17 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.swing.JFileChooser;
 
+import Model.VO.EmailVO;
+
 public class Envio_Email {
 
-	private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
+	public static void sendFromGMail(EmailVO email) {
+		String from = email.getFrom();
+		String pass = email.getPass();
+		String[] to = email.getTo();
+		String subject = email.getSubject();
+		String body = email.getBody();
+		
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
         
