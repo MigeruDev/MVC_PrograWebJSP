@@ -23,6 +23,10 @@ public class Envio_Email {
 
 	public static void sendFromGMail(EmailVO email) {
 		
+		
+		/**
+		 * Correo de envío
+		 */
 		String from = "benitocamelasmaria";
 		email.setFrom(from);
 		String pass = "123456789";
