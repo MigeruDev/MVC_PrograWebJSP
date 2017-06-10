@@ -22,8 +22,8 @@
 		<div id="panel">
 			<center>
 				<a href="addPersona.jsp" type="button" class="btn btn-success">Agregar Persona</a>
-				<a href="viewPersona.jsp" type="button" class="btn btn-info">Listar Personas</a>
 				<a href="enviarFormulario.jsp" type="button" class="btn btn-success">Enviar formulario</a>
+				<a href="viewPersona.jsp" type="button" class="btn btn-info">Listar Personas</a>
 			</center>					
 		</div>
 		<div id="info" class="container-fluid">
