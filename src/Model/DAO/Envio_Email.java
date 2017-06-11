@@ -59,7 +59,7 @@ public class Envio_Email {
         try {
             
             texto.setText(body);
-            archivo.showOpenDialog(null);
+            //archivo.showOpenDialog(null);
 
             int seleccion = archivo.showOpenDialog(null);
             if(seleccion == JFileChooser.APPROVE_OPTION){
