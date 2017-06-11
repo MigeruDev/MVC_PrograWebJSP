@@ -21,9 +21,6 @@ import Model.VO.EmailVO;
 
 public class Envio_Email {
 	
-	public Envio_Email(){
-		
-	}
 
 	public static int sendFromGMail(EmailVO email) {
 
