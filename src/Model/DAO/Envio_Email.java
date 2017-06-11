@@ -20,8 +20,12 @@ import javax.swing.JFileChooser;
 import Model.VO.EmailVO;
 
 public class Envio_Email {
+	
+	public Envio_Email(){
+		
+	}
 
-	public static void sendFromGMail(EmailVO email) {
+	public static int sendFromGMail(EmailVO email) {
 
 		/**
 		 * Correo de envío
@@ -107,6 +111,8 @@ public class Envio_Email {
         } catch (MessagingException me) {
             me.printStackTrace();
         }
+        
+        return 0;
     }
 	
 	

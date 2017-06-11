@@ -30,8 +30,8 @@ pageEncoding="ISO-8859-1"%>
 				<fieldset class="form-group">
 					<legend>Ingrese los datos para el envío de email</legend>
 					<div class="form-group">
-						<label for="correo">Correo electrónico:</label>
-						<input type="email" class="form-control" name="correo">
+						<label for="to">Correo electrónico:</label>
+						<input type="email" class="form-control" name="to">
 					</div>
 					<div class="form-group">
 						<label for="body">Comentarios:</label>
