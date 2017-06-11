@@ -15,9 +15,11 @@ section #panel, section #info{
 /*Section-Panel*/
 
 #panel{
+	position: relative;
 	background-color: #eaeaea;
 	width: 250px;
 }
+
 
 #panel .btn{
 	width: 90%;
@@ -26,18 +28,9 @@ section #panel, section #info{
 }
 
 #panel .btn-info{
-	margin-top: 460px;
-}
-
-/*Section-Report*/
-
-.dataTables_info, .dataTables_paginate{
-	margin: auto;
-	margin-top: 100px;
-}
-
-.dataTables_info{
-	background-color: crimson !important;
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
 }
 
 
@@ -49,6 +42,28 @@ section #panel, section #info{
 
 #info .table-striped{
 	margin-top: 50px;
+}
+
+#tablaPersonas_info{
+	position: absolute;
+	bottom: 40px;
+}
+
+#tablaPersonas_wrapper{
+	position: relative;
+	height: 100%;
+}
+
+#tablaPersonas_paginate{
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+}
+
+#tablaPersonas_paginate .paginate_button{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*Footer*/

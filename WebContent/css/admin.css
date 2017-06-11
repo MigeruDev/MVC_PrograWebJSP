@@ -15,9 +15,11 @@ section #panel, section #info{
 /*Section-Panel*/
 
 #panel{
+	position: relative;
 	background-color: #eaeaea;
 	width: 250px;
 }
+
 
 #panel .btn{
 	width: 90%;
@@ -26,7 +28,9 @@ section #panel, section #info{
 }
 
 #panel .btn-info{
-	margin-top: 460px;
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
 }
 
 
