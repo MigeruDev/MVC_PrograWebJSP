@@ -4,5 +4,5 @@
 
 <%
 	Envio_Email.sendFromGMail(email);
-	response.sendRedirect("enviarFormulario.jsp");
+	response.sendRedirect("viewPersona.jsp");
 %>
