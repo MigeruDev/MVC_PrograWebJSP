@@ -15,7 +15,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import javax.swing.JFileChooser;
+import javax.swing.*;
 
 import Model.VO.EmailVO;
 
@@ -29,7 +29,7 @@ public class Envio_Email {
 		 */
 		String from = "benitocamelasmaria";
 		email.setFrom(from);
-		String pass = "123456789";
+		String pass = "a123456789.";
 		
 		String[] to = email.getTo();
 		
