@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,23 +31,24 @@
 					<legend>Ingrese los datos para el envío de email</legend>
 					<div class="form-group">
 						<label for="correo">Correo electrónico:</label>
-						<input type="text" class="form-control" name="email">
+						<input type="email" class="form-control" name="correo">
 					</div>
 					<div class="form-group">
-						<label for="comentario">Comentarios:</label>
-						<textarea class="form-control" rows="4" cols="50" name="comentario">
+						<label for="body">Comentarios:</label>
+						<textarea style="max-width: 290px;	max-height: 200px;" class="form-control" rows="2" cols="2" name="body">
 						</textarea>
 					</div>
-					<center>
-						<button type="submit" class="btn btn-primary">Enviar</button>
-					</center>
+					
 				</fieldset>
+				<center>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</center>
 			</form>
 		</div>
 	</section>
 	<footer>
 		<p>© 2017<a style="color:#0a93a6; 
-		text-decoration:none;" href="#" > Jaramillo & Macías</a>, All rights reserved 2017-2018.</p>
-	</footer>
-</body>
-</html>
+			text-decoration:none;" href="#" > Jaramillo & Macías</a>, All rights reserved 2017-2018.</p>
+		</footer>
+	</body>
+	</html>

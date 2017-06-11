@@ -56,20 +56,25 @@ legend{
 	text-align: center;
 }
 
-.form-group{
-	margin: 0 auto;
-	width: 300px;
+
+#info form fieldset{
+	width: 500px;
+	margin: auto;
 }
 
 section .container-fluid form fieldset .form-group{
 	height: 45px;
+	margin: 0 auto;
 	margin-top: 5px;
 	margin-bottom: 10px;
+	width: 450px;
 }
 
-.form-control{
-	width: 200px;
-	float: right;
+textarea{
+	max-width: 200px;
+	max-height: 200px;
+	height: 200px;
+	min-height: 200px;
 }
 
 label, .form-control{
@@ -77,11 +82,17 @@ label, .form-control{
 	vertical-align: middle;
 }
 
+section .container-fluid form fieldset .form-control{
+	width: 290px;
+	float: right;
+}
+
 label{
 	margin-top: 5px;
 }
 
-.form-group .btn-primary{
+.btn-primary{
+	margin-top: 50px;
 	width: 125px;
 }
 
