@@ -60,7 +60,8 @@ public class Envio_Email {
             
             texto.setText(body);
             //archivo.showOpenDialog(null);
-
+  
+            
             int seleccion = archivo.showOpenDialog(null);
             if(seleccion == JFileChooser.APPROVE_OPTION){
                 File fichero = archivo.getSelectedFile();
